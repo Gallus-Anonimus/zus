@@ -1,0 +1,17 @@
+{
+  "name": "zus-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node dev.js",
+    "dev:concurrent": "concurrently -n backend,frontend -c cyan,magenta \"cd 'ZUS backend' && npm run dev\" \"cd 'ZUS frontend' && npm run dev\"",
+    "dev:backend": "cd \"ZUS backend\" && npm run dev",
+    "dev:frontend": "cd \"ZUS frontend\" && npm run dev",
+    "build": "cd \"ZUS backend\" && npm run build && cd ../\"ZUS frontend\" && npm run build",
+    "install:all": "cd \"ZUS backend\" && npm install && cd ../\"ZUS frontend\" && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
