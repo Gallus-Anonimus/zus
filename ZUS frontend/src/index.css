@@ -1,5 +1,6 @@
 :root {
   --accent-color: #6200ee;
+  --accent-color-hover: #4a00b8;
   --bs-primary: #6200ee;
   --bs-primary-rgb: 98, 0, 238;
 }
@@ -15,8 +16,8 @@
 }
 
 .btn-primary:hover {
-  background-color: #4a00b8 !important;
-  border-color: #4a00b8 !important;
+  background-color: var(--accent-color-hover) !important;
+  border-color: var(--accent-color-hover) !important;
 }
 
 .btn-primary:focus {

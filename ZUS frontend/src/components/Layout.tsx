@@ -1,11 +1,14 @@
 import { ReactNode } from "react";
 import Sidebar from "./Sidebar/Sidebar.tsx";
+import { useAccentColorInit } from "../utils/useAccentColor.ts";
 
 interface LayoutProps {
     children: ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
+    useAccentColorInit();
+    
     return (
         <div className="d-flex min-vh-100 bg-light">
             <Sidebar />

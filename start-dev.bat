@@ -8,3 +8,5 @@ echo Both services are starting in separate windows.
 echo Close the windows to stop the services.
 pause
 
+
+
